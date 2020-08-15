@@ -24,9 +24,9 @@ const iterateObject = (obj) =>{
                 }
             }
             if(flag==1){
-             obj[prop].value = valuetobereplaced;
-             console.log(obj[prop].value);
-             flag=0;
+                obj[prop].value = valuetobereplaced;
+                console.log(obj[prop].value);
+                flag=0;
             }
             
         }    
