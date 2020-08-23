@@ -17,11 +17,11 @@ function replace_function(input_data_value) {
   {
     if(input_data_value[v1].valueType=='string')       
     {
-      for(let refvalue in input_data.refvalueerenceData)
+      for(let refvalue in input_data.referenceData)
         {
-        if(input_data_value[v1].value.match(RegEv1p(`${refvalue}`)))
+        if(input_data_value[v1].value.match(XRegExp(`${refvalue}`)))
               {
-               input_data_value[v1].value=input_data_value[v1].value.replace(RegEv1p(`{${refvalue}}`),input_data.refvalueerenceData[refvalue]);
+               input_data_value[v1].value=input_data_value[v1].value.replace(XRegExp(`{${refvalue}}`),input_data.referenceData[refvalue]);
               }
         }
   
